@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+	#header{
+		position: fixed;
+		z-index: 9;
+		background-color: #fff;
+		margin-bottom: 30px;
+		width: 100%;
+		top: 0;
+		box-shadow: 0 2px 5px rgba(0,0,0,.3);
+		line-height: 20px;
+		height: 60px;
+		font-size: 14px;
+	}
+	@media (min-width: 1200px){
+		.container {
+			width: 1200px;
+		}
+	}
+	@media (min-width: 992px){
+		.container {
+			width: 960px;
+		}
+	}
+
+	@media (min-width: 768px){
+		.container{
+			width: 720px;
+		}
+	}
+	.container{
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 1200px;
+	}
+	#header .navbar{
+		position: relative;
+		border:none;
+		margin-bottom: 0;
+		color: #555;
+		border-radius: 4px;
+		min-height: 60px;
+	}
+	#header .navbar-header {
+		float: left;
+		position: relative;
+		z-index: 3;
+	}
+	#header .narbar-brand{
+		float: left;
+		font-size: 18px;
+		line-height: 20px;
+		height: 60px;
+
+	}
+	a,a:focus,a:hover{
+		cursor: pointer;
+		text-decoration: none;
+		outline: none;
+	}
+	.hidden{
+		display: none !important;
+		visibility: hidden;
+	}
+	@media (min-width: 992px){
+		.navbar-collapse.collapse{
+			display: block!important;
+			height: auto !!important;
+			padding-bottom: 0;
+			overflow: visible!!important;
+
+		}
+	}
+	@media (min-width: 992px){
+		.navbar-collapse{
+			width: auto;
+			border-top:0;
+			box-shadow: none;
+		}
+	}
+	@media (min-width: 992px){
+		.navbar-nav {
+			float: left;
+			margin: 0;
+		}
+	}
+	.navbar-nav>li{
+		float: left;
+	}
+	.nav >li{
+		position: relative;
+		display: block;
+	}
+#header .nav > li:first-child > a {
+  padding-left: 0;
+}
+#header .nav > li:first-child > a .text {
+  padding-left: 20px;
+  border-left: 1px solid #dddddd;
+}
+@media (max-width: 991px) {
+  #header .nav > li:first-child > a .text {
+    border: none;
+  }
+}
+#header .nav > li > a {
+  padding-left: 20px;
+  padding-right: 0;
+}
+#header .nav > li > a:focus,
+#header .nav > li > a:hover,
+#header .nav > li > a.active {
+  color: #0078d2;
+  background: none;
+}
+#header .nav > li > a.active {
+  color: #fff;
+  background: #0078d2;
+  margin-left: -1px;
+}
+#header .nav > li > a.active .text {
+  border-color: #0078d2;
+}
+#header .nav > li > a .text {
+  padding-right: 20px;
+  border-right: 1px solid #dddddd;
+}
+@media (max-width: 991px) {
+  #header .nav > li > a .text {
+    border: none;
+  }
+}
+#header .navbar-nav {
+  position: relative;
+  z-index: 5;
+}
+
+	</style>
+</head>
+<body>
+	<header id="header">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+ -->                <a class="navbar-brand" href="http://wallstreetcn.com/">
+                    <h1 class="hidden">Wallstreet</h1>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="navbar" class="collapse navbar-collapse relative">
+                <ul class="nav navbar-nav">
+                    <li><a class="link active" data-active-url="\/news.*$" href="http://wallstreetcn.com/news"><span class="text">新闻资讯</span></a></li>
+                    <li><a class="link" data-active-url="live.wallstreetcn.com/.*$" href="http://live.wallstreetcn.com"><span class="text">实时新闻</span></a></li>
+                    <li><a class="link" href="http://markets.wallstreetcn.com" target="_blank"><span class="text">实时行情</span></a></li>
+                    <li><a class="link" href="http://calendar.wallstreetcn.com" target="_blank"><span class="text">财经日历</span></a></li>
+                    <li><a class="link" href="http://www.goldtoutiao.com/" target="_blank"><span class="text">贵金属</span></a></li>
+                    <li><a class="link" data-active-url="\/app.*$" href="http://wallstreetcn.com/app/index.html" target="_blank"><span class="text">App下载</span></a></li>
+                    <!-- <li><a class="link" href="http://activity.wallstreetcn.com/newses/evo1.0/" target="_blank"><span class="text">新版介绍</span></a></li> -->
+
+                </ul>
+
+                <div id="navbar-right">
+                    <span class="angle fa fa-arrow-circle-left"></span>
+                    <div class="content">
+                        <span data-toggle="search-form" class="button-search fa fa-search"></span>
+                        <div class="user-control">
+                            <a class="button register" data-action="register" href="http://wallstreetcn.com/register">注册</a>
+                            <a class="button login" data-action="login" href="http://wallstreetcn.com/login">登录</a>
+                            <a class="avatar" href="http://wallstreetcn.com/mine/dashboard">
+                                <img src="http://wscn.cdn.wallstreetcn.com/wscn/img/avatar-md.png?0c5f633912" alt="">
+                            </a>
+                            <div class="control">
+                                <nav class="content">
+                                    <a class="item" href="http://wallstreetcn.com/mine/stars">我的收藏</a>
+                                    <a class="item" href="http://wallstreetcn.com/mine/comments">我的评论</a>
+                                    <a class="item" href="http://wallstreetcn.com/mine/profile">个人资料</a>
+                                    <a class="item" href="http://wallstreetcn.com/mine/password">
+                                        修改密码
+                                        <span class="icon-inactive">未激活</span>
+                                    </a>
+                                    <hr class="line">
+                                    <a class="item" href="http://wallstreetcn.com/logout">退出登录</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-form-wrapper"></div>
+                <form class="search-form" action="http://wallstreetcn.com/search" role="search" novalidate="novalidate">
+                    <input type="text" class="search-field" name="q" placeholder="请按回车键立即搜索">
+                </form>
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+    </div>
+    </header>
+
+    <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div>
+</body>
+</html>

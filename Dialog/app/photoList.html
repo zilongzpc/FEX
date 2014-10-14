@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <style>
+        *{
+            margin:0;padding: 0;
+        }
+        #postbar{
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+        }
+        #postbar .fa{
+            display: block; position: relative;height: 30px;width: 30px;line-height: 30px;text-align: center;
+            border-radius: 5px;margin-bottom: 15px;color: #fff;
+        }
+    </style>
+    <!--<style>-->
+        <!--*{-->
+            <!--margin: 0;-->
+            <!--padding: 0;-->
+        <!--}-->
+        <!--#header{-->
+            <!--position: fixed;-->
+            <!--z-index: 9;-->
+            <!--background-color: #fff;-->
+            <!--margin-bottom: 30px;-->
+            <!--width: 100%;-->
+            <!--top: 0;-->
+            <!--box-shadow: 0 2px 5px rgba(0,0,0,.3);-->
+            <!--line-height: 20px;-->
+            <!--height: 60px;-->
+            <!--font-size: 14px;-->
+        <!--}-->
+        <!--@media (min-width: 1200px){-->
+            <!--.container {-->
+                <!--width: 1200px;-->
+            <!--}-->
+        <!--}-->
+        <!--@media (min-width: 992px){-->
+            <!--.container {-->
+                <!--width: 960px;-->
+            <!--}-->
+        <!--}-->
+
+        <!--@media (min-width: 768px){-->
+            <!--.container{-->
+                <!--width: 720px;-->
+            <!--}-->
+        <!--}-->
+        <!--.container{-->
+            <!--margin-right: auto;-->
+            <!--margin-left: auto;-->
+            <!--padding-left: 15px;-->
+            <!--padding-right: 15px;-->
+            <!--width: 1200px;-->
+        <!--}-->
+        <!--#header .navbar{-->
+            <!--position: relative;-->
+            <!--border:none;-->
+            <!--margin-bottom: 0;-->
+            <!--color: #555;-->
+            <!--border-radius: 4px;-->
+            <!--min-height: 60px;-->
+        <!--}-->
+        <!--#header .navbar-header {-->
+            <!--float: left;-->
+            <!--position: relative;-->
+            <!--z-index: 3;-->
+        <!--}-->
+        <!--#header .narbar-brand{-->
+            <!--float: left;-->
+            <!--font-size: 18px;-->
+            <!--line-height: 20px;-->
+            <!--height: 60px;-->
+
+        <!--}-->
+        <!--a,a:focus,a:hover{-->
+            <!--cursor: pointer;-->
+            <!--text-decoration: none;-->
+            <!--outline: none;-->
+        <!--}-->
+        <!--.hidden{-->
+            <!--display: none !important;-->
+            <!--visibility: hidden;-->
+        <!--}-->
+        <!--@media (min-width: 992px){-->
+            <!--.navbar-collapse.collapse{-->
+                <!--display: block!important;-->
+                <!--height: auto !!important;-->
+                <!--padding-bottom: 0;-->
+                <!--overflow: visible!!important;-->
+
+            <!--}-->
+        <!--}-->
+        <!--@media (min-width: 992px){-->
+            <!--.navbar-collapse{-->
+                <!--width: auto;-->
+                <!--border-top:0;-->
+                <!--box-shadow: none;-->
+            <!--}-->
+        <!--}-->
+        <!--@media (min-width: 992px){-->
+            <!--.navbar-nav {-->
+                <!--float: left;-->
+                <!--margin: 0;-->
+            <!--}-->
+        <!--}-->
+        <!--.navbar-nav>li{-->
+            <!--float: left;-->
+        <!--}-->
+        <!--.nav >li{-->
+            <!--position: relative;-->
+            <!--display: block;-->
+        <!--}-->
+        <!--#header .nav > li:first-child > a {-->
+            <!--padding-left: 0;-->
+        <!--}-->
+        <!--#header .nav > li:first-child > a .text {-->
+            <!--padding-left: 20px;-->
+            <!--border-left: 1px solid #dddddd;-->
+        <!--}-->
+        <!--@media (max-width: 991px) {-->
+            <!--#header .nav > li:first-child > a .text {-->
+                <!--border: none;-->
+            <!--}-->
+        <!--}-->
+        <!--#header .nav > li > a {-->
+            <!--padding-left: 20px;-->
+            <!--padding-right: 0;-->
+
+        <!--}-->
+        <!--#header .nav > li > a:focus,-->
+        <!--#header .nav > li > a:hover,-->
+        <!--#header .nav > li > a.active {-->
+            <!--color: #0078d2;-->
+            <!--background: none;-->
+        <!--}-->
+        <!--#header .nav > li > a.active {-->
+            <!--color: #fff;-->
+            <!--background: #0078d2;-->
+            <!--margin-left: -1px;-->
+        <!--}-->
+        <!--#header .nav > li > a.active .text {-->
+            <!--border-color: #0078d2;-->
+        <!--}-->
+        <!--#header .nav > li > a .text {-->
+            <!--padding-right: 20px;-->
+            <!--border-right: 1px solid #dddddd;-->
+        <!--}-->
+        <!--@media (max-width: 991px) {-->
+            <!--#header .nav > li > a .text {-->
+                <!--border: none;-->
+            <!--}-->
+        <!--}-->
+        <!--#header .navbar-nav {-->
+            <!--position: relative;-->
+            <!--z-index: 5;-->
+        <!--}-->
+
+    <!--</style>-->
+</head>
+<body>
+<!--<header id="header">-->
+    <!--<div class="container">-->
+        <!--<nav class="navbar" role="navigation">-->
+            <!--<div class="navbar-header">-->
+                <!--<a class="navbar-brand" href="http://wallstreetcn.com/">-->
+                    <!--<h1 class="hidden">Wallstreet</h1>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div id="navbar" class="collapse navbar-collapse relative">-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li><a class="link active" data-active-url="\/news.*$" href="http://wallstreetcn.com/news"><span class="text">首页</span></a></li>-->
+                    <!--<li><a class="link active" data-active-url="\/news.*$" href="http://wallstreetcn.com/news"><span class="text">app下载</span></a></li>-->
+
+
+                <!--</ul>-->
+            <!--</div>-->
+
+        <!--</nav>-->
+
+<!--</header>-->
+<aside id="postbar" class="hidden-xs hidden-xxs">
+    <a class="fa fa-mobile-phone"><input type="button" value="1223"/>
+        <!--<img src="http://wscn.cdn.wallstreetcn.com/wscn/img/footer-qr-app.png?81acce8ebd" alt="">-->
+    </a>
+    <a class="fa fa-pencil" href="http://www.diaochapai.net/survey933755" title="用户反馈" target="_blank">q</a>
+    <a class="fa fa-wechat">
+      q  <!--<img src="http://wscn.cdn.wallstreetcn.com/wscn/img/footer-qr-wechat.png?81acce8ebd" alt="">-->
+    </a>
+    <a class="fa fa-chevron-up up" data-action="goto-top" href="#" title="返回顶部">q</a>
+</aside>
+
+<div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div> <div>asdasdasdad <br/></div>
+</body>
+</html>

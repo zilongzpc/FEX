@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+<style>
+#water_fall_area {
+    position: relative;
+    min-height: 500px;
+    margin: 10px auto 0;
+    visibility: visible;
+}
+
+#water_fall_area .water_fall_item {
+    float: left;
++ display : inline;
+    height: auto;
+    margin: 0 21px 20px 0;
+    border-top: 0 none;
+    background-color: #fff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    padding: 15px 15px 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .5);
+}
+
+.water_fall_item .j {
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #E3E4E5;
+    border-bottom: none ;
+    width: 224px;
+    padding: 0;
+    /*padding:11px 0 0 0;box-shadow:3px 3px 3px #E3E4E5;-moz-box-shadow:3px 3px 3px #E3E4E5;-webkit-box-shadow:3px 3px 3px #E3E4E5;*/
+    border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+}
+
+.water_fall_item .j .water_fall_image_area {
+    position: relative;
+    float: none;
+    overflow: hidden; width: 240px;
+    height: auto;
+    margin: 0;
+}
+
+.water_fall_image_area a {
+    float: left;
+    /*width: 100%;*/
+    height: 100%;
+}
+
+.water_fall_item .j .water_fall_image_area img {
+    display: block;
+    margin-left: auto; margin-right: auto; _width: 240px;
+    max-width: 240px;
+    border: 0px;
+}
+
+.collbtn {
+    position: absolute;
+    width: 208px;
+    height: 44px;
+    left: 0;
+    top: 0;
+    padding: 8px 8px;
+    /*display: none;*/
+    z-index: 500;
+    background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528135812_wYJyt.png");
+    background-position: 0 -72px;
+    background-repeat: no-repeat;
+    _background-image: none;
+}
+
+.collbtn a:link, .collbtn a:visited, .collbtn a:hover {
+    float: left;
++ display : inline;
+    height: 30px;
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    text-decoration: none;
+    z-index: 500;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.collbtn a.y:link, .collbtn a.y:visited {
+    background-color: white;
+    background-position: 0 0;
+
+}
+
+
+
+
+
+.collbtn a em {
+    float: left;
++ display : inline;
+    line-height: 16px;
+    height: 16px;
+    margin: 7px 8px 7px 0;
+}
+
+.collbtn a.z:link, .collbtn a.z:visited {
+    float: right;
++ display : inline;
+    width: 36px;
+    height: 30px;
+    z-index: 600;
+    overflow: hidden;
+}
+
+.collbtn a.z i {
+    display: block;
+    width: 26px;
+    height: 24px;
+    margin: 2px 6px;
+    background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    _background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    background-repeat: no-repeat;
+    background-position: -24px 0;
+}
+
+.collbtn a.z i.z-done {
+    background-position: -24px -24px;
+}
+
+.collbtn a.z:link i, .collbtn a.z:visited i, .collbtn a.z:hover i {
+    text-indent: 9999px;
+}
+
+.collbtn a.x:link i, .collbtn a.x:visited i, .collbtn a.x:hover i {
+    text-indent: 9999px;
+}
+
+.collbtn a.x:link, .collbtn a.x:visited {
+    float: right;
++ display : inline;
+    width: 36px;
+    height: 30px;
+    margin-left: 8px;
+    z-index: 600;
+    overflow: hidden;
+}
+
+.collbtn a.x i {
+    display: block;
+    width: 26px;
+    height: 24px;
+    margin: 2px 6px;
+    background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    _background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    background-repeat: no-repeat;
+    background-position: -48px 0;
+
+}
+
+#water_fall_area .c {
+    /*border-width: 0 1px 0 1px;*/
+    /*border-style: solid;*/
+    /*border-color: #dedfe0;*/
+}
+
+#water_fall_area .c .water_fall_desc {
+    clear: both;
+    overflow: hidden;
+    padding: 10px 12px 10px 12px;
+    margin: 0;
+    color: #444444;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 12px;
+}
+
+.d {
+    overflow: hidden;
+    padding: 0 12px 0 12px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    /*border-bottom: 1px solid grey;*/
+}
+
+.d span {
+    float: left;
+    line-height: 19px;
+    padding: 0 0 0 16px;
+    margin: 0 8px 0 0;
+    background-image: url("http://img4.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    background-repeat: no-repeat;
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+.d .d1 {
+    background-position: -5px -50px;
+}
+
+.water_fall_user {
+    /*border-bottom: 1px solid black;*/
+    height: 30px;
+    background-color: white;
+}
+</style>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/masonry/dist/masonry.pkgd.js"></script>
+<script>
+    /**
+     * 点赞
+     * @param e
+     */
+    function favour(e){
+
+    }
+    /**
+     * 评论
+     * @param e
+     */
+    function comment(e){
+
+    }
+</script>
+</head>
+<body>
+<div id="water_fall_area">
+    <div class="water_fall_item">
+        <div class="j">
+            <div class="water_fall_image_area">
+                <a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"
+                                                                                         alt="这个杀手不太冷"
+                                                                                         data-iid="23062415"
+                                                                                         src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg">
+                    <u style="margin-top:-177px;height:175px;" class=""></u></a>
+
+                <div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"
+                     style="position: absolute; left: 0px; top: 0px; ">
+                    <a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>
+                    <a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>
+            </div>
+            <div class="c">
+                <div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>
+                <div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>
+                <div class="water_fall_user"></div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--</a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_user">a-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201410/08/20141008234714_XQNdR.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="water_fall_item">-->
+    <!--<div class="j">-->
+    <!--<div class="water_fall_image_area">-->
+    <!--<a target="_blank" class="a" href="/people/mblog/209442046/detail/"><img data-rootid="209442046"-->
+    <!--alt="这个杀手不太冷"-->
+    <!--data-iid="23062415"-->
+    <!--src="http://img5.duitang.com/uploads/item/201409/23/20140923184253_B4Pkx.thumb.224_0.jpeg"-->
+    <!-->-->
+    <!--<u style="margin-top:-177px;height:175px;" class=""></u></a>-->
+
+    <!--<div class="collbtn" data-favorite="{&quot;id&quot;:209442046,&quot;owner&quot;:475474}"-->
+    <!--style="position: absolute; left: 0px; top: 0px; ">-->
+    <!--<a class="x btn-white" href="#" title="登录才能评论，点击下就可以登录啦"><i>0</i></a>-->
+    <!--<a class="z btn-white" href="#" title="登录之后才能赞哦！"><i>1</i></a></div>-->
+    <!--</div>-->
+    <!--<div class="c">-->
+    <!--<div class="water_fall_desc">这个杀手不太冷这个杀手不太冷不太冷不太冷不太冷</div>-->
+    <!--<div class="d"><span class="d1 ">6</span><span class="d2 ">1</span><span class="d3 dn">0</span></div>-->
+    <!--<div class="water_fall_user"></div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+</div>
+<script>
+    var $container = $('#water_fall_area');
+    // initialize
+    $container.masonry({
+        columnWidth: 0,
+        itemSelector: '.water_fall_item'
+    });
+</script>
+</body>
+</html>
