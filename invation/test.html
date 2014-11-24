@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#buttonFullScreen').click(function () {
+                if (document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled) {
+                    if (i.requestFullscreen) {
+                        i.requestFullscreen();
+                    } else if (i.webkitRequestFullscreen) {
+                        i.webkitRequestFullscreen();
+                    } else if (i.mozRequestFullScreen) {
+                        i.mozRequestFullScreen();
+                    } else if (i.msRequestFullscreen) {
+                        i.msRequestFullscreen();
+                    }
+                } else {
+                    console.log('not surport');
+                }
+            });
+        })
+    </script>
+</head>
+
+<body id="mybody">
+<div style="margin: 0 auto; width: 200px; height: 300px;">
+    <p>
+        asdasdadadsad </p>
+
+    <p>
+        asdasdadadsad </p>
+
+    <p>
+        asdasdadadsad </p>
+
+    <input type="button" name="buttonFullScreen" id="buttonFullScreen" value="全频"/>
+</div>
+</body>
+
+</html>
